@@ -67,6 +67,8 @@ public class Main {
       }
 
       model.put("records", output);
+      model.put("str_ret", "Teste retorno string");
+      
       return "db";
     } catch (Exception e) {
       model.put("message", e.getMessage());
